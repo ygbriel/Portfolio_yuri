@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html, body{
+  font-family: Ubuntu, Arial;
+  width: 100%;
+  height: 100%;
+}
+
+/*configs da "faixa" na esqueda do menu*/
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #021124;
+  overflow-y: auto;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  padding: 0 15px;
+  z-index: 9997;
+}
+
+/*configs da ft de perfil*/
+#header .profile img{
+  /*margem*/
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  /*borda*/
+  border: 8px solid #1e1f2a;
+  /*arredondamento da borda*/
+  border-radius: 50%;
+}
+
+/*configs do h1 (texto Yuri Gabriel)*/
+#header .profile h1{
+  /*tamanho da fonte*/
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  /*alinhamento do texto*/
+  text-align: center;
+  color: #fff
+}
+
+/*configs dos ícones das redes sociais, tudo que tiver "a" na div social-links*/
+#header .profile .social-links a{
+  font-size: 1rem;
+  background: #212431;
+  color: #fff;
+  padding: 0.4rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  trasition: 0.3s;
+  text-decoration: none;
+}
+
+/*config pra qnd passar com o mouse em cima do ícone*/
+#header .profile .social-links a:hover{
+  background: #2475cc;
+}
+
+.nav-menu{
+  padding: 1.5rem;
+}
+
+/*links - texto*/
+.nav-menu a,
+.nav-menu a:focus{
+  display: flex;
+  align-items: center;
+  color: #7a7a7a;
+  /*transition qnd passa o mouse*/
+  transition: 0.3s;
+  front-size: 15px;
+}
+
+/*ícones*/
+.nav-menu a i,
+.nav-menu a:focus i{
+  front-size: 24px;
+  padding-right: 0.8rem;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i{
+  color: #105cf4;
+}
+
+
+/*MEXENDO NA TELA INICAL*/
+#main{
+  /*margem a esquerda pra aparecer, já que na esquerda tem a aba de navegação*/
+  margin-left: 300px;
+}
+
+  /*configs da ft da tela inical*/
+section#inicio{
+  background-image: url("./img/messi_mexendo_no_pc.png");
+  /*não vai se repetir*/
+  background-repeat: no-repeat;
+  /*ocupar todo o espaço*/
+  background-size: cover;
+  /*ser fixa, mesmo com a rolagem*/
+  background-attachment: fixed;
+  /*sempre no centro*/
+  background-position: center;
+
+  /*largura*/
+  width: 100%;
+  /*altura. vh=tamanho da tela*/
+  height: 100vh;
+}
+
+section#inicio h2{
+  font-size: 6rem;
+}
+
+section#inicio span#subtitle{
+  margin-right: 8rem;
+  font-size: 1.5rem;
+}
+
+.text-shadow{
+  /*text-shadow direita esquerda profundidade cor*/
+  text-shadow: 4px 4px 10px #000;
+}
+
+section#inicio div#arraste{
+  width: 9rem;
+}
+
+section#inicio div#arraste a{
+  text-decoration: none;
+  color: #fff;
+}
